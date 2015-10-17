@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=rxvt-unicode.desktop,xfce-wm-settings.desktop,exo-terminal-emulator.desktop,chromium-browser.desktop,exo-web-browser.desktop,debian-xterm.desktop,xfce-settings-manager.desktop,xfce-ui-settings.desktop,xfce4-settings-editor.desktop,exo-preferred-applications.desktop
+recent=exo-terminal-emulator.desktop,rxvt-unicode.desktop,xfce-wm-settings.desktop,chromium-browser.desktop,exo-web-browser.desktop,debian-xterm.desktop,xfce-settings-manager.desktop,xfce-ui-settings.desktop,xfce4-settings-editor.desktop,exo-preferred-applications.desktop
 button-title=Applications Menu
 button-icon=xfce4-whiskermenu
 show-button-title=false
