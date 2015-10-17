@@ -1,4 +1,4 @@
-WebBrowser=chromium
-TerminalEmulator=debian-x-terminal-emulator
+TerminalEmulator=urxvt
 FileManager=Thunar
 
+WebBrowser=chromium-browser

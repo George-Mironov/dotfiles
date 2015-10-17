@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-mixer" version="1.0">
+  <property name="sound-card" type="string" value="PlaybackFiiOUSBDACE07KDigitalStereoIEC958PulseAudioMixer"/>
+  <property name="sound-cards" type="empty">
+    <property name="HDAIntelPCHAlsamixer" type="array">
+      <value type="string" value="Internal Mic Boost"/>
+      <value type="string" value="Internal Mic"/>
+      <value type="string" value="IEC958 Default PCM"/>
+      <value type="string" value="Mic Boost"/>
+      <value type="string" value="Microphone"/>
+      <value type="string" value="PCM"/>
+      <value type="string" value="Speaker"/>
+      <value type="string" value="Headphone"/>
+      <value type="string" value="Master"/>
+    </property>
+    <property name="PlaybackFiiOUSBDACE07KDigitalStereoIEC958PulseAudioMixer" type="array">
+      <value type="string" value="Master"/>
+    </property>
+    <property name="CaptureMonitorofFiiOUSBDACE07KDigitalStereoIEC958PulseAudioMixer" type="array">
+      <value type="string" value="Master"/>
+    </property>
+    <property name="CaptureBuiltinAudioAnalogStereoPulseAudioMixer" type="array">
+      <value type="string" value="Master"/>
+    </property>
+    <property name="FiiOUSBDACE07KAlsamixer" type="array">
+      <value type="string" value="PCM"/>
+    </property>
+  </property>
+  <property name="window-height" type="int" value="454"/>
+  <property name="window-width" type="int" value="901"/>
+</channel>
