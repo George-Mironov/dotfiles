@@ -1,5 +1,5 @@
-URxvt*background: #282828
-URxvt*foreground: #ebdbb2
+URxvt*background: #1d2021
+URxvt*foreground: white
 URxvt*color0:  #282828
 URxvt*color1:  #cc241d
 URxvt*color2:  #98971a
@@ -16,8 +16,9 @@ URxvt*color12: #83a598
 URxvt*color13: #d3869b
 URxvt*color14: #8ec07c
 URxvt*color15: #ebdbb2
-URxvt*iconFile: ~/.icons/Faenza/apps/scalable/xterm.svg
-URxvt*font: xft:Terminus:size=16
+
+URxvt*iconFile: /usr/local/share/icons/Faenza/apps/scalable/xterm.svg
+URxvt*font: xft:Fira Mono:medium:size=13
 URxvt*scrollBar: false
 URxvt*perl-ext-common: default,font-size,clipboard
 URxvt.iso14755: false
