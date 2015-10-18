@@ -11,6 +11,7 @@
         <property name="startup-notify" type="empty"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="empty"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="empty"/>
       <property name="XF86Display" type="empty"/>
       <property name="&lt;Super&gt;p" type="empty"/>
       <property name="&lt;Primary&gt;Escape" type="empty"/>
@@ -143,6 +144,7 @@
       <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="tile_down_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="tile_left_key"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="tile_right_key"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;ISO_Left_Tab" type="string" value="prev_workspace_key"/>
     </property>
   </property>
   <property name="providers" type="array">
