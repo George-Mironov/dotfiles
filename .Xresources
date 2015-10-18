@@ -1,23 +1,8 @@
-URxvt*background: #282828
-URxvt*foreground: #ebdbb2
-URxvt*color0:  #282828
-URxvt*color1:  #cc241d
-URxvt*color2:  #98971a
-URxvt*color3:  #d79921
-URxvt*color4:  #458588
-URxvt*color5:  #b16286
-URxvt*color6:  #689d6a
-URxvt*color7:  #a89984
-URxvt*color8:  #928374
-URxvt*color9:  #fb4934
-URxvt*color10: #b8bb26
-URxvt*color11: #fabd2f
-URxvt*color12: #83a598
-URxvt*color13: #d3869b
-URxvt*color14: #8ec07c
-URxvt*color15: #ebdbb2
-URxvt*iconFile: ~/.icons/Faenza/apps/scalable/xterm.svg
-URxvt*font: xft:Terminus:size=16
+URxvt*background: #1d2021
+URxvt*foreground: #d0d0d0
+
+URxvt*iconFile: /usr/local/share/icons/Faenza/apps/scalable/xterm.svg
+URxvt*font: xft:Fira Mono:size=13:medium:antialias=true:hinting=true
 URxvt*scrollBar: false
 URxvt*perl-ext-common: default,font-size,clipboard
 URxvt.iso14755: false
@@ -31,4 +16,19 @@ URxvt.keysym.C-S-Down: perl:font-size:decglobal
 URxvt.keysym.C-C:   perl:clipboard:copy
 URxvt.keysym.C-V:   perl:clipboard:paste
 
-Xft.antialias:  true
+*color0:  #282828
+*color1:  #cc241d
+*color2:  #98971a
+*color3:  #d79921
+*color4:  #458588
+*color5:  #b16286
+*color6:  #689d6a
+*color7:  #a89984
+*color8:  #928374
+*color9:  #fb4934
+*color10: #b8bb26
+*color11: #fabd2f
+*color12: #83a598
+*color13: #d3869b
+*color14: #8ec07c
+*color15: #ebdbb2
