@@ -25,10 +25,10 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
       <property name="&lt;Super&gt;r" type="string" value="xfce4-appfinder --disable-server"/>
       <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;l" type="string" value="dm-tool lock"/>
+      <property name="&lt;Alt&gt;t" type="string" value="urxvt -e bash -c &quot;tmux -q has-session &amp;&amp; exec tmux attach-session -d || exec tmux new-session -s$USER@$HOSTNAME&quot;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
