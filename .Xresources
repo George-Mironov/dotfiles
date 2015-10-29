@@ -4,9 +4,12 @@ URxvt*foreground: #d0d0d0
 URxvt*iconFile: /usr/local/share/icons/Faenza/apps/scalable/xterm.svg
 URxvt*font: xft:Fira Mono:size=13:medium:antialias=true:hinting=true
 URxvt*scrollBar: false
-URxvt*perl-ext-common: default,font-size,clipboard
+URxvt*perl-ext-common: default,font-size,clipboard,url-select
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
 
 URxvt.keysym.C-Up:     perl:font-size:increase
 URxvt.keysym.C-Down:   perl:font-size:decrease
@@ -16,7 +19,8 @@ URxvt.keysym.C-S-Down: perl:font-size:decglobal
 URxvt.keysym.C-C:   perl:clipboard:copy
 URxvt.keysym.C-V:   perl:clipboard:paste
 
-*color0:  #282828
+URxvt.keysym.M-u: perl:url-select:select_next
+
 *color1:  #cc241d
 *color2:  #98971a
 *color3:  #d79921
