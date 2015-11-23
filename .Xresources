@@ -18,12 +18,13 @@
 *color14: #fcaf3e
 *color15: #eeeeec
 
-Xft.dpi:        96
-Xft.antialias:  true
-Xft.rgba:       rgb
-Xft.hinting:    true
-Xft.autohint:   true
-Xft.hintstyle:  hintfull
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
 
 URxvt.geometry: 160x48
 URxvt.scrollTtyKeypress: true
