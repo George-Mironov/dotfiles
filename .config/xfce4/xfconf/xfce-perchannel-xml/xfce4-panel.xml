@@ -8,14 +8,14 @@
       <property name="position" type="string" value="p=6;x=800;y=21"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="30"/>
+      <property name="size" type="uint" value="28"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="4"/>
-        <value type="int" value="8"/>
+        <value type="int" value="5"/>
         <value type="int" value="3"/>
         <value type="int" value="15"/>
         <value type="int" value="12"/>
-        <value type="int" value="10"/>
+        <value type="int" value="14"/>
         <value type="int" value="11"/>
         <value type="int" value="7"/>
         <value type="int" value="6"/>
@@ -67,33 +67,22 @@
       <property name="rows" type="uint" value="1"/>
     </property>
     <property name="plugin-4" type="string" value="whiskermenu"/>
-    <property name="plugin-8" type="string" value="windowck-plugin"/>
-    <property name="plugin-10" type="string" value="indicator">
-      <property name="known-indicators" type="array">
-        <value type="string" value="libappmenu.so"/>
-        <value type="string" value="libapplication.so"/>
-        <value type="string" value="com.canonical.indicator.power"/>
-        <value type="string" value="com.canonical.indicator.keyboard"/>
-        <value type="string" value="com.canonical.indicator.messages"/>
-      </property>
-      <property name="mode-whitelist" type="bool" value="false"/>
-      <property name="single-row" type="bool" value="false"/>
-      <property name="align-left" type="bool" value="false"/>
-      <property name="blacklist" type="array">
-        <value type="string" value="libappmenu.so"/>
-      </property>
-      <property name="whitelist" type="array">
-      </property>
-    </property>
-    <property name="plugin-6" type="string" value="datetime"/>
     <property name="plugin-11" type="string" value="weather"/>
     <property name="plugin-12" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="vlc"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="networkmanager applet"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="blueman-applet"/>
+        <value type="string" value="skype"/>
+        <value type="string" value="update-notifier"/>
       </property>
       <property name="names-hidden" type="array">
       </property>
     </property>
+    <property name="plugin-5" type="string" value="windowck-plugin"/>
+    <property name="plugin-14" type="string" value="power-manager-plugin"/>
+    <property name="plugin-6" type="string" value="datetime"/>
   </property>
 </channel>
