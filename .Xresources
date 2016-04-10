@@ -75,7 +75,6 @@ URxvt.saveLines: 0
 URxvt.depth:32
 URxvt.fading: 40
 URxvt.font: xft:Fira Mono Medium:size=14
-URxvt.letterSpace: -2
 URxvt.perl-ext-common: default,font-size,clipboard,url-select
 URxvt.iso14755: false
 URxvt.iso14755_52: false
@@ -90,6 +89,8 @@ URxvt.keysym.C-Down:   perl:font-size:decrease
 URxvt.keysym.C-S-Up:   perl:font-size:incglobal
 URxvt.keysym.C-S-Down: perl:font-size:decglobal
 
+URxvt.clipboard.copycmd:  xclip -i -selection clipboard
+URxvt.clipboard.pastecmd: xclip -o -selection clipboard
 URxvt.keysym.C-C:   perl:clipboard:copy
 URxvt.keysym.C-V:   perl:clipboard:paste
 
