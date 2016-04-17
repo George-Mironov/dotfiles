@@ -1,5 +1,9 @@
 set nocompatible
 
+set listchars=eol:¬,tab:—·,trail:~,extends:>,precedes:<,space:·
+set list
+set number
+
 set tabstop=4
 set shiftwidth=4
 set smarttab

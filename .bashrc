@@ -1,3 +1,5 @@
+source /usr/share/git/completion/git-prompt.sh 2> /dev/null
+
 shopt -s histappend
 shopt -s cdspell
 
@@ -7,9 +9,11 @@ export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; histor
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-RED="\[$(tput setaf 1)\]"
+GREEN="\[$(tput setaf 10)\]"
+GREY="\[$(tput setaf 7)\]"
+LIGHT_BLUE="\[$(tput setaf 51)\]"
 RESET="\[$(tput sgr0)\]"
-PS1="\u@\h:\w${RED}$(__git_ps1 "(%s)")${RESET}\$ "
+PS1="${GREEN}\u@\h:${RESET}\w${GREY}\$(__git_ps1)${LIGHT_BLUE}\$${RESET} "
 
 if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
