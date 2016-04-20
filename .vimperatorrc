@@ -1,4 +1,4 @@
-noremap <C-a> <C-Home><C-S-End>
+inoremap <C-a> <C-Home><C-S-End>
 
 noremap l gt
 noremap h gT
