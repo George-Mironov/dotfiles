@@ -1,5 +1,7 @@
 set nocompatible
 
+set noswapfile
+
 set listchars=eol:¬,tab:—·,trail:~,extends:>,precedes:<,space:·
 set list
 set number
