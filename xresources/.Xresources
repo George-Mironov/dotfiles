@@ -65,15 +65,13 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
 Xft.rgba: rgb
 
-URxvt.geometry: 142x35
+URxvt.geometry: 142x36
 URxvt.scrollTtyKeypress: true
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: false
 URxvt.skipScroll: true
 URxvt.scrollBar: false
-URxvt.saveLines: 0
-URxvt.depth:32
-URxvt.fading: 40
+!URxvt.depth:32
 URxvt.font: xft:Fira Mono Medium:size=14
 URxvt.perl-ext-common: default,font-size,clipboard,url-select
 URxvt.iso14755: false

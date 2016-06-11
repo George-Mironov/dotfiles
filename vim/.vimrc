@@ -1,10 +1,19 @@
 set nocompatible
 
+set lazyredraw
+
 set noswapfile
 
 set listchars=eol:¬,tab:—·,trail:~,extends:>,precedes:<,space:·
 set list
 set number
+
+set backspace=indent,eol,start
+
+set hlsearch
+set incsearch
+
+set showmatch
 
 set tabstop=4
 set shiftwidth=4

@@ -1,10 +1,13 @@
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+
 inoremap <C-a> <C-Home><C-S-End>
+noremap <C-a> <C-Home><C-S-End>
 
 noremap l gt
 noremap h gT
 
-noremap j 2j
-noremap k 2k
+noremap j 3j
+noremap k 3k
 
 map b :bmarks<SPACE>
 
