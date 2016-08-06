@@ -20,9 +20,13 @@ PS1="${GREEN}\u@\h:${RESET}\w${GREY}\$(__git_ps1)${LIGHT_BLUE}\$${RESET} "
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias du='du -sh'
 alias da='du -c */ .*/ | sort -k2'
+
+if [ -d "$HOME/bin" ]; then
+    PATH=$PATH:$HOME/bin
+fi
 
 if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm"
@@ -32,3 +36,5 @@ fi
 if which tmux >/dev/null 2>&1; then
     test -z "$TMUX" && ! shopt -q login_shell && (tmux attach || tmux new-session)
 fi
+
+stty -ixon
