@@ -1,5 +1,5 @@
 *.cursorColor:  #ebdbb2
-*.background: [95]#2d2d2d
+URxvt.background: [95]#2d2d2d
 *.foreground: #f6efdf
 ! Black + DarkGrey
 *.color0:  #2d2d2d
