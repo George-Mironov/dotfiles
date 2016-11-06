@@ -1,3 +1,6 @@
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
+
 source /usr/share/git/completion/git-prompt.sh 2> /dev/null
 
 shopt -s histappend

@@ -1,7 +1,7 @@
 set nocompatible
 
 set lazyredraw
-
+set clipboard=unnamedplus
 set noswapfile
 
 set listchars=eol:¬,tab:—·,trail:~,extends:>,precedes:<,space:·
