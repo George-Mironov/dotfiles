@@ -1,6 +1,22 @@
+call plug#begin()
+
+Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin'
+
+call plug#end()
+
+syntax on
+
+filetype plugin indent on
+
+colorscheme gruvbox
+set background=dark
+
 set nocompatible
 
-set lazyredraw
+set autoread
+set autowriteall
+
 set clipboard=unnamedplus
 set noswapfile
 
@@ -9,7 +25,19 @@ set list
 set number
 
 set backspace=indent,eol,start
+set laststatus=2
+set display=lastline
 
+set showmode
+set showcmd
+
+set ttyfast
+set lazyredraw
+
+set cursorline
+
+set ignorecase
+set smartcase
 set hlsearch
 set incsearch
 
@@ -21,17 +49,3 @@ set smarttab
 set expandtab
 set smartindent
 
-syntax on
-
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'morhetz/gruvbox'
-
-call vundle#end()
-filetype plugin indent on
-
-colorscheme gruvbox
-set background=dark

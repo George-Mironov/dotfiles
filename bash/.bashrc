@@ -1,6 +1,3 @@
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
-
 source /usr/share/git/completion/git-prompt.sh 2> /dev/null
 
 shopt -s histappend
@@ -12,8 +9,11 @@ set -o ignoreeof
 export HISTCONTROL=ignoreboth:erasedups
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
+export EDITOR=vim
+
 HISTSIZE=1000
 HISTFILESIZE=2000
+
 
 GREEN="\[$(tput setaf 10)\]"
 GREY="\[$(tput setaf 7)\]"
@@ -25,7 +25,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -alhF'
 alias du='du -sh'
-alias da='du -c */ .*/ | sort -k2'
+alias da='du -c * .[!.]*'
+alias pacro='sudo pacman -Rns $(pacman -Qtdq)'
+alias vi='vim'
 
 if [ -d "$HOME/bin" ]; then
     PATH=$PATH:$HOME/bin
