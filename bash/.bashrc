@@ -1,5 +1,3 @@
-source /usr/share/git/completion/git-prompt.sh 2> /dev/null
-
 shopt -s histappend
 shopt -s cdspell dirspell autocd
 shopt -s no_empty_cmd_completion
@@ -14,7 +12,6 @@ export EDITOR=vim
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-
 GREEN="\[$(tput setaf 10)\]"
 GREY="\[$(tput setaf 7)\]"
 LIGHT_BLUE="\[$(tput setaf 51)\]"
@@ -26,7 +23,6 @@ alias grep='grep --color=auto'
 alias ll='ls -alhF'
 alias du='du -sh'
 alias da='du -c * .[!.]*'
-alias pacro='sudo pacman -Rns $(pacman -Qtdq)'
 alias vi='vim'
 
 if [ -d "$HOME/bin" ]; then
@@ -38,3 +34,7 @@ if which tmux >/dev/null 2>&1; then
 fi
 
 stty -ixon
+
+if [ -f "$HOME/.spbashrc" ]; then
+    . $HOME/.spbashrc
+fi

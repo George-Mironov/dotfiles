@@ -68,7 +68,7 @@ Xft.rgba: rgb
 URxvt.geometry: 142x36
 URxvt.scrollTtyKeypress: true
 URxvt.scrollTtyOutput: false
-URxvt.scrollWithBuffer: false
+URxvt.scrollWithBuffer: true
 URxvt.skipScroll: true
 URxvt.scrollBar: false
 URxvt.depth: 32
