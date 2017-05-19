@@ -1,0 +1,11 @@
+[user]
+	email = mironovga@gmail.com
+	name = George Mironov
+[core]
+	excludesfile = ~/.gitignore
+[merge]
+	tool = meld
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
