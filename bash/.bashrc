@@ -9,8 +9,8 @@ export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; histor
 
 export EDITOR=vim
 
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 GREEN="\[$(tput setaf 10)\]"
 GREY="\[$(tput setaf 7)\]"
@@ -24,6 +24,7 @@ alias ll='ls -alhF'
 alias du='du -sh'
 alias da='du -c * .[!.]*'
 alias vi='vim'
+alias sv='source venv/bin/activate'
 
 if [ -d "$HOME/bin" ]; then
     PATH=$PATH:$HOME/bin
