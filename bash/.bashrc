@@ -12,15 +12,21 @@ export EDITOR=vim
 HISTSIZE=10000
 HISTFILESIZE=20000
 
+BOLD="\[$(tput bold)\]"
 GREEN="\[$(tput setaf 10)\]"
 GREY="\[$(tput setaf 7)\]"
 LIGHT_BLUE="\[$(tput setaf 51)\]"
 RESET="\[$(tput sgr0)\]"
-PS1="${GREEN}\u@\h:${RESET}\w${GREY}\$(__git_ps1)${LIGHT_BLUE}\$${RESET} "
+PS1="${BOLD}${GREEN}\u@\h:${RESET}${BOLD}\w${GREY}\$(__git_ps1)${LIGHT_BLUE}\$${RESET} "
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias ll='ls -alhF'
+if hash exa 2>/dev/null; 
+then 
+    alias ll='exa -alF'
+else
+    alias ll='ls -alhF'
+fi
 alias du='du -sh'
 alias da='du -c * .[!.]*'
 alias vi='vim'

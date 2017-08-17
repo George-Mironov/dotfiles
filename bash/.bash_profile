@@ -6,3 +6,5 @@ if [ -f "$HOME/.spbash_profile" ]; then
     . "$HOME/.spbash_profile"
 fi
 
+
+export LFS=/mnt/lfs

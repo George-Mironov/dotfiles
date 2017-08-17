@@ -72,7 +72,7 @@ URxvt.scrollWithBuffer: true
 URxvt.skipScroll: true
 URxvt.scrollBar: false
 URxvt.depth: 32
-URxvt.font: xft:Fira Mono Medium:size=14
+URxvt.font: xft:Fira Mono Medium:size=15
 URxvt.perl-ext-common: default,font-size,clipboard,url-select
 URxvt.iso14755: false
 URxvt.iso14755_52: false
