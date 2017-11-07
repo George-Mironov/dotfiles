@@ -1,0 +1,184 @@
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/gnome/file-roller/listing]
+sort-method='name'
+name-column-width=250
+sort-type='ascending'
+list-mode='as-folder'
+show-path=false
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Alt>t'
+command='urxvtc'
+name='Terminal'
+
+[org/gnome/settings-daemon/plugins/xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize,maximize,close'>}
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+geometry='890x550+0+34'
+maximized=false
+
+[org/gnome/nautilus/list-view]
+default-zoom-level='small'
+
+[org/gnome/desktop/wm/preferences]
+num-workspaces=5
+titlebar-font='Noto Sans 12'
+
+[org/gnome/desktop/wm/keybindings]
+switch-to-workspace-right=['<Primary><Alt>l']
+unmaximize=@as []
+switch-to-workspace-left=['<Primary><Alt>h']
+switch-input-source=['<Alt>Shift_L', '<Shift>Alt_L']
+move-to-workspace-left=['<Alt><Super>h']
+move-to-workspace-right=['<Alt><Super>l']
+toggle-maximized=['<Alt>F5']
+
+[org/gnome/desktop/peripherals/touchpad]
+natural-scroll=false
+speed=0.71532846715328469
+tap-to-click=true
+send-events='enabled'
+
+[org/gnome/desktop/background]
+picture-uri='file:///home/george/wallpapers/wallhaven-6358.jpg'
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'us'), ('xkb', 'ru')]
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/interface]
+font-name='Noto Sans 12'
+gtk-im-module='gtk-im-context-simple'
+cursor-theme='Paper'
+gtk-theme='Adapta-Eta'
+icon-theme='Paper'
+
+[org/gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=169
+window-position=(279, 49)
+show-size-column=true
+show-hidden=false
+window-size=(1338, 982)
+sort-directories-first=false
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'
+
+[com/solus-project/budgie-panel]
+dark-theme=false
+migration-level=1
+builtin-theme=true
+panels=['282c9e3a-ac5b-11e7-93fa-34f39aed0580']
+
+[com/solus-project/budgie-panel/instance/workspaces/{1db43fe8-ac5c-11e7-99df-34f39aed0580}]
+addbutton-visibility='never'
+
+[com/solus-project/budgie-panel/instance/budgie-menu/{282db57c-ac5b-11e7-93fa-34f39aed0580}]
+menu-compact=false
+enable-menu-label=false
+menu-categories-hover=true
+menu-headers=false
+
+[com/solus-project/budgie-panel/panels/{282c9e3a-ac5b-11e7-93fa-34f39aed0580}]
+size=39
+location='top'
+applets=['283ecbd2-ac5b-11e7-93fa-34f39aed0580', '2837caf8-ac5b-11e7-93fa-34f39aed0580', '283e72fe-ac5b-11e7-93fa-34f39aed0580', '282db57c-ac5b-11e7-93fa-34f39aed0580', '2838d402-ac5b-11e7-93fa-34f39aed0580', '2837e362-ac5b-11e7-93fa-34f39aed0580', '28334730-ac5b-11e7-93fa-34f39aed0580', '3bbf6e7c-ac5c-11e7-99df-34f39aed0580', '1db43fe8-ac5c-11e7-99df-34f39aed0580', '283e8c26-ac5b-11e7-93fa-34f39aed0580', '283dcfb6-ac5b-11e7-93fa-34f39aed0580', '28330d4c-ac5b-11e7-93fa-34f39aed0580', '283f66c8-ac5b-11e7-93fa-34f39aed0580']
+transparency='none'
+
+[com/solus-project/budgie-panel/applets/{283dcfb6-ac5b-11e7-93fa-34f39aed0580}]
+position=4
+alignment='end'
+name='User Indicator'
+
+[com/solus-project/budgie-panel/applets/{283e8c26-ac5b-11e7-93fa-34f39aed0580}]
+position=6
+alignment='end'
+name='Separator'
+
+[com/solus-project/budgie-panel/applets/{283ecbd2-ac5b-11e7-93fa-34f39aed0580}]
+position=7
+alignment='end'
+name='Clock'
+
+[com/solus-project/budgie-panel/applets/{28334730-ac5b-11e7-93fa-34f39aed0580}]
+position=2
+alignment='start'
+name='Icon Task List'
+
+[com/solus-project/budgie-panel/applets/{2837caf8-ac5b-11e7-93fa-34f39aed0580}]
+position=0
+alignment='end'
+name='Spacer'
+
+[com/solus-project/budgie-panel/applets/{282db57c-ac5b-11e7-93fa-34f39aed0580}]
+position=0
+alignment='start'
+name='Budgie Menu'
+
+[com/solus-project/budgie-panel/applets/{283f66c8-ac5b-11e7-93fa-34f39aed0580}]
+position=8
+alignment='end'
+name='Raven Trigger'
+
+[com/solus-project/budgie-panel/applets/{1db43fe8-ac5c-11e7-99df-34f39aed0580}]
+position=0
+alignment='center'
+name='Workspace Switcher'
+
+[com/solus-project/budgie-panel/applets/{2837e362-ac5b-11e7-93fa-34f39aed0580}]
+position=1
+alignment='end'
+name='System Tray'
+
+[com/solus-project/budgie-panel/applets/{2838d402-ac5b-11e7-93fa-34f39aed0580}]
+position=3
+alignment='end'
+name='Status Indicator'
+
+[com/solus-project/budgie-panel/applets/{3bbf6e7c-ac5c-11e7-99df-34f39aed0580}]
+position=2
+alignment='end'
+name='Keyboard Layout'
+
+[com/solus-project/budgie-panel/applets/{28330d4c-ac5b-11e7-93fa-34f39aed0580}]
+position=1
+alignment='start'
+name='Spacer'
+
+[com/solus-project/budgie-panel/applets/{283e72fe-ac5b-11e7-93fa-34f39aed0580}]
+position=5
+alignment='end'
+name='Spacer'
+
+[com/solus-project/budgie-wm]
+button-layout='appmenu:minimize,maximize,close'
+
+[ca/desrt/dconf-editor]
+saved-view='/org/gnome/desktop/wm/keybindings/switch-input-source'
+show-warning=false
+window-height=600
+window-width=800
+window-is-maximized=false
