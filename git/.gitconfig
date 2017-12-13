@@ -12,7 +12,7 @@
 [help]
 	autocorrect = 1
 [merge]
-	tool = meld
+	tool = vscode
 [branch]
 	autosetuprebase = always
 [pull]
@@ -23,3 +23,5 @@
 	keepBackup = false
 [rebase]
 	autoStash = true
+[mergetool "vscode"]
+	cmd = "code --wait $MERGED"
