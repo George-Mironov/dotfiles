@@ -31,6 +31,7 @@ alias du='du -sh'
 alias da='du -c * .[!.]*'
 alias vi='vim'
 alias sv='source venv/bin/activate'
+alias sudo='sudo '
 
 if [ -d "$HOME/bin" ]; then
     PATH=$PATH:$HOME/bin
