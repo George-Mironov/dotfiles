@@ -1,18 +1,8 @@
-[org/gnome/eog/view]
-background-color='rgb(0,0,0)'
-use-background-color=true
-
-[org/gnome/file-roller/listing]
-sort-method='name'
-name-column-width=250
-sort-type='ascending'
-list-mode='as-folder'
-show-path=false
-
-[org/gnome/file-roller/ui]
-sidebar-width=200
-window-height=480
-window-width=600
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=1800
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
@@ -28,16 +18,47 @@ overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:minimize
 [org/gnome/settings-daemon/peripherals/keyboard]
 numlock-state='off'
 
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/gnome/evince]
+document-directory=@ms 'file:///home/george/Dropbox'
+
+[org/gnome/file-roller/listing]
+sort-method='name'
+name-column-width=250
+sort-type='ascending'
+list-mode='as-folder'
+show-path=false
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-geometry='890x550+0+34'
+sidebar-width=170
+geometry='1149x781+320+93'
 maximized=false
 
 [org/gnome/nautilus/list-view]
 default-zoom-level='small'
+
+[org/gnome/cheese]
+photo-y-resolution=720
+burst-delay=1000
+video-y-resolution=720
+camera='USB2.0 HD UVC WebCam: USB2.0 HD'
+photo-x-resolution=1280
+video-x-resolution=1280
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
 
 [org/gnome/desktop/wm/preferences]
 num-workspaces=5
@@ -59,7 +80,9 @@ tap-to-click=true
 send-events='enabled'
 
 [org/gnome/desktop/background]
-picture-uri='file:///home/george/wallpapers/wallhaven-6358.jpg'
+picture-uri='file:///home/george/wallpapers/austin-neill-184257.jpg'
+show-desktop-icons=false
+picture-options='zoom'
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
@@ -77,8 +100,8 @@ icon-theme='Paper'
 
 [org/gtk/settings/file-chooser]
 sort-column='name'
-sidebar-width=169
-window-position=(279, 49)
+sidebar-width=170
+window-position=(228, 34)
 show-size-column=true
 show-hidden=false
 window-size=(1338, 982)
@@ -177,7 +200,7 @@ name='Spacer'
 button-layout='appmenu:minimize,maximize,close'
 
 [ca/desrt/dconf-editor]
-saved-view='/org/gnome/desktop/wm/keybindings/switch-input-source'
+saved-view='/org/gnome/mutter/no-tab-popup'
 show-warning=false
 window-height=600
 window-width=800
