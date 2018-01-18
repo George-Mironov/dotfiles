@@ -15,7 +15,7 @@ HISTFILESIZE=20000
 BOLD="\[$(tput bold)\]"
 GREEN="\[$(tput setaf 10)\]"
 GREY="\[$(tput setaf 7)\]"
-LIGHT_BLUE="\[$(tput setaf 51)\]"
+LIGHT_BLUE="\[$(tput setaf 14)\]"
 RESET="\[$(tput sgr0)\]"
 PS1="${BOLD}${GREEN}\u@\h:${RESET}${BOLD}\w${GREY}\$(__git_ps1)${LIGHT_BLUE}\$${RESET} "
 
