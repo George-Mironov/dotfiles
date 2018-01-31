@@ -8,3 +8,5 @@ fi
 
 
 export LFS=/mnt/lfs
+
+export PATH="$HOME/.cargo/bin:$PATH"

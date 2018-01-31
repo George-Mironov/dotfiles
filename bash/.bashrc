@@ -13,7 +13,7 @@ HISTSIZE=10000
 HISTFILESIZE=20000
 
 BOLD="\[$(tput bold)\]"
-GREEN="\[$(tput setaf 10)\]"
+GREEN="\[$(tput setaf 2)\]"
 GREY="\[$(tput setaf 7)\]"
 LIGHT_BLUE="\[$(tput setaf 14)\]"
 RESET="\[$(tput sgr0)\]"
