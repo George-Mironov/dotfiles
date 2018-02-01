@@ -11,6 +11,7 @@ filetype plugin indent on
 
 colorscheme gruvbox
 set background=dark
+set termguicolors
 
 set nocompatible
 
@@ -33,6 +34,7 @@ set showcmd
 
 set ttyfast
 set lazyredraw
+set mouse=a
 
 set cursorline
 
@@ -49,3 +51,5 @@ set smarttab
 set expandtab
 set smartindent
 
+set wildmenu
+set wildmode=list:longest,full
