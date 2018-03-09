@@ -1,0 +1,2 @@
+rm $(gsettings get org.gnome.desktop.background picture-uri | sed s/\'//g | sed "s/^file:\/\///g")
+

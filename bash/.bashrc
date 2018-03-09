@@ -17,12 +17,12 @@ GREEN="\[$(tput setaf 2)\]"
 GREY="\[$(tput setaf 7)\]"
 LIGHT_BLUE="\[$(tput setaf 14)\]"
 RESET="\[$(tput sgr0)\]"
-PS1="${BOLD}${GREEN}\u@\h:${RESET}${BOLD}\w${GREY}\$(__git_ps1)${LIGHT_BLUE}\$${RESET} "
+PS1="${BOLD}${GREEN}\u@\h ${RESET}${BOLD}\w${GREY}\$(__git_ps1)${LIGHT_BLUE} #${RESET} "
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-if hash exa 2>/dev/null; 
-then 
+if hash exa 2>/dev/null;
+then
     alias ll='exa -alF'
 else
     alias ll='ls -alhF'
@@ -35,6 +35,9 @@ alias sudo='sudo '
 alias py='python'
 alias ipy='ipython'
 alias o='xdg-open'
+alias mkdir='mkdir -p'
+alias cp='cp -r'
+alias scp='scp -r'
 
 if [ -d "$HOME/bin" ]; then
     PATH=$PATH:$HOME/bin
