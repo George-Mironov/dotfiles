@@ -32,6 +32,9 @@ alias da='du -c * .[!.]*'
 alias vi='vim'
 alias sv='source venv/bin/activate'
 alias sudo='sudo '
+alias py='python'
+alias ipy='ipython'
+alias o='xdg-open'
 
 if [ -d "$HOME/bin" ]; then
     PATH=$PATH:$HOME/bin
@@ -46,3 +49,4 @@ stty -ixon
 if which tmux >/dev/null 2>&1; then
     test -z "$TMUX" && ! shopt -q login_shell && (tmux attach || tmux new-session)
 fi
+
