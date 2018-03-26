@@ -25,3 +25,8 @@
 	autoStash = true
 [mergetool "vscode"]
 	cmd = "code --wait $MERGED"
+[rerere]
+	enabled = true
+[diff]
+	compactionHeuristic = true
+	indentHeuristic = on
