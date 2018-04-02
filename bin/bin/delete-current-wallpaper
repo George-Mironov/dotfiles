@@ -1,2 +1,3 @@
 rm $(gsettings get org.gnome.desktop.background picture-uri | sed s/\'//g | sed "s/^file:\/\///g")
+$HOME/cron/change-wallpaper 2>&1  >/dev/null
 
