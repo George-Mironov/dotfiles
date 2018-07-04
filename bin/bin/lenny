@@ -1,1 +1,0 @@
-echo "( ͡° ͜ʖ ͡°)" | tee /dev/tty | xclip -selection clipboard

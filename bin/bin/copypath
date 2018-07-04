@@ -1,0 +1,2 @@
+realpath $1 | xclip -i -sel clipboard
+
