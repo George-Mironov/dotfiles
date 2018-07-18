@@ -25,7 +25,7 @@ if hash exa 2>/dev/null;
 then
     alias ll='exa -alF'
 else
-    alias ll='ls -alhF'
+    alias ll='ls -AlohF'
 fi
 alias du='du -sh'
 alias da='du -c * .[!.]*'

@@ -109,7 +109,7 @@ colors:
   # Default colors
   primary:
     background: '0x1b1918'
-    foreground: '0xa8a19f'
+    foreground: '0xc9c1be'
 
   # Normal colors
   normal:
@@ -138,7 +138,7 @@ visual_bell:
   duration: 0
 
 # Background opacity
-background_opacity: .95
+background_opacity: .97
 
 # Mouse bindings
 #
