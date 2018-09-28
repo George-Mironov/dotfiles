@@ -1,32 +1,38 @@
 [user]
-	email = mironovga@gmail.com
-	name = George Mironov
+    email = george.mironov@synesis.ru
+    name = Georgy Mironov
 [alias]
-    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+    l = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short
     s = status -s
-	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
-	amend = commit --amend --reuse-message=HEAD
+    go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+    amend = commit --amend --reuse-message=HEAD
     hreset = reset --hard
-[core]
-	excludesfile = ~/.gitignore
-[help]
-	autocorrect = 1
-[merge]
-	tool = vscode
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
+[core]
+    excludesfile = ~/.gitignore
+    pager = less -x1,5
+[diff]
+    compactionHeuristic = true
+    indentHeuristic = on
+[help]
+    autocorrect = 1
+[merge]
+    tool = vscode
+[mergetool]
+    keepBackup = false
+[mergetool "vscode"]
+    cmd = "code --wait $MERGED"
 [pull]
-	rebase = true
+    rebase = true
 [push]
     default = current
-[mergetool]
-	keepBackup = false
 [rebase]
-	autoStash = true
-[mergetool "vscode"]
-	cmd = "code --wait $MERGED"
+    autoStash = true
 [rerere]
-	enabled = true
-[diff]
-	compactionHeuristic = true
-	indentHeuristic = on
+    enabled = true
+[filter "trimWhitespace"]
+    clean = -
+    clean = git
+[credential]
+    helper = cache
