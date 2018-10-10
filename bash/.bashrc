@@ -37,12 +37,17 @@ alias e='$EDITOR'
 alias cl='clear'
 alias n='nnn'
 
-if [ -d "$HOME/bin" ]; then
-    PATH=$PATH:$HOME/bin
-fi
-
 if [ -f "$HOME/.spbashrc" ]; then
     . $HOME/.spbashrc
+fi
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
 fi
 
 #stty -ixon

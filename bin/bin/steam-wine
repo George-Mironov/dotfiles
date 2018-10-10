@@ -1,1 +1,0 @@
-WINEDEBUG=-all wine ~/.wine/drive_c/steam/Steam.exe -no-cef-sandbox

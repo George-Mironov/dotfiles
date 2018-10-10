@@ -1,3 +1,0 @@
-#!/bin/sh
-CITY=${1:-Minsk}
-curl -s -N wttr.in/$CITY | head -n 27
