@@ -33,9 +33,8 @@ alias o='xdg-open'
 alias mkdir='mkdir -p'
 alias cp='cp -r'
 alias scp='scp -r'
-alias e='$EDITOR'
 alias cl='clear'
-alias n='nnn'
+alias df='df -x"squashfs"'
 
 if [ -f "$HOME/.spbashrc" ]; then
     . $HOME/.spbashrc
@@ -66,3 +65,5 @@ function rn {
     rm -f -- "$tempfile"
 }
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
