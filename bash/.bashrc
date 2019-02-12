@@ -9,6 +9,8 @@ export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; histor
 
 export EDITOR=vim
 
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude ".git"'
+
 HISTSIZE=10000000
 HISTFILESIZE=20000000
 
@@ -22,6 +24,7 @@ PS1="${BOLD}${GREEN}\u@\h ${GREY}\D{%T} ${RESET}${BOLD}[\w]${GREY}\$(__git_ps1)$
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -AlohF'
+alias df='df -h'
 alias du='du -sh'
 alias da='du -c * .[!.]*'
 alias vi='vim'
