@@ -38,12 +38,8 @@ set mouse=a
 
 set cursorline
 
-set ignorecase
-set smartcase
-set hlsearch
-set incsearch
-
-set showmatch
+set wildmenu
+set wildmode=list:longest,full
 
 set tabstop=4
 set shiftwidth=4
@@ -51,5 +47,25 @@ set smarttab
 set expandtab
 set smartindent
 
-set wildmenu
-set wildmode=list:longest,full
+nnoremap / /\v
+vnoremap / /\v
+set gdefault
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set showmatch
+
+let mapleader = ","
+
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+nnoremap ; :
+
+au FocusLost * :wa
