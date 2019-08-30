@@ -1,13 +1,13 @@
 {
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Fantasque Sans Mono",
 	"font_size": 12,
 	"hot_exit": false,
-	"save_on_focus_lost": true,
-	"draw_white_space": "all",
-	"trim_trailing_white_space_on_save": true,
-    "ensure_newline_at_eof_on_save": true,
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"save_on_focus_lost": true,
+	"trim_trailing_white_space_on_save": true
 }
