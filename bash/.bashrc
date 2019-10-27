@@ -21,14 +21,12 @@ LIGHT_BLUE="\[$(tput setaf 14)\]"
 RESET="\[$(tput sgr0)\]"
 PS1="${BOLD}${GREEN}\u@\h ${GREY}\D{%T} ${RESET}${BOLD}[\w]${GREY}\$(__git_ps1)${LIGHT_BLUE}\n#${RESET} "
 
-alias ls='ls --color=auto'
+alias ll='ls --color=auto -AlohF'
 alias grep='grep --color=auto'
-alias ll='ls -AlohF'
-alias df='df -h'
+alias df='df -h -x"squashfs"'
 alias du='du -sh'
 alias da='du -c * .[!.]*'
 alias vi='vim'
-alias sv='source venv/bin/activate'
 alias sudo='sudo '
 alias py='python'
 alias ipy='ipython'
@@ -37,7 +35,8 @@ alias mkdir='mkdir -p'
 alias cp='cp -r'
 alias scp='scp -r'
 alias cl='clear'
-alias df='df -x"squashfs"'
+alias subl='subl3'
+alias e='subl'
 
 if [ -f "$HOME/.spbashrc" ]; then
     . $HOME/.spbashrc
