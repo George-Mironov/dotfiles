@@ -1,5 +1,5 @@
 [user]
-    email = mironovga@gmail.com
+    email = georgymironov@yandex-team.ru
     name = Georgy Mironov
 [alias]
     l = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short

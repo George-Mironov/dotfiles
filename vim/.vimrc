@@ -1,15 +1,9 @@
-call plug#begin()
-
-Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin'
-
-call plug#end()
-
 syntax on
 
 filetype plugin indent on
 
-colorscheme gruvbox
+colorscheme desert
+
 set background=dark
 set termguicolors
 
@@ -47,8 +41,6 @@ set smarttab
 set expandtab
 set smartindent
 
-nnoremap / /\v
-vnoremap / /\v
 set gdefault
 set ignorecase
 set smartcase

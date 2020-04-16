@@ -11,21 +11,36 @@ export EDITOR=vim
 
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude ".git"'
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
 HISTSIZE=10000000
 HISTFILESIZE=20000000
 
-BOLD="\[$(tput bold)\]"
-GREEN="\[$(tput setaf 2)\]"
-GREY="\[$(tput setaf 7)\]"
-LIGHT_BLUE="\[$(tput setaf 14)\]"
-RESET="\[$(tput sgr0)\]"
-PS1="${BOLD}${GREEN}\u@\h ${GREY}\D{%T} ${RESET}${BOLD}[\w]${GREY}\$(__git_ps1)${LIGHT_BLUE}\n#${RESET} "
+if [[ $- == *i* ]]; then
+    BOLD="\[$(tput bold)\]"
+    RED="\[$(tput setaf 1)\]"
+    GREEN="\[$(tput setaf 2)\]"
+    GREY="\[$(tput setaf 7)\]"
+    LIGHT_BLUE="\[$(tput setaf 14)\]"
+    RESET="\[$(tput sgr0)\]"
+fi
+
+if [[ -n $SSH_CLIENT ]]; then
+    export DISPLAY=:10
+    HOST_COLOR=$RED
+else
+    HOST_COLOR=$GREEN
+fi
+
+PS1="${BOLD}${HOST_COLOR}\u@\h ${GREY}\D{%T} ${RESET}${BOLD}[\w]${GREY}\$(__git_ps1)${LIGHT_BLUE}\n#${RESET} "
 
 alias ll='ls --color=auto -AlohF'
 alias grep='grep --color=auto'
 alias df='df -h -x"squashfs"'
 alias du='du -sh'
-alias da='du -c * .[!.]*'
 alias vi='vim'
 alias sudo='sudo '
 alias py='python'
@@ -35,8 +50,13 @@ alias mkdir='mkdir -p'
 alias cp='cp -r'
 alias scp='scp -r'
 alias cl='clear'
-alias subl='subl3'
-alias e='subl'
+
+if hash subl 2>/dev/null ; then
+    alias s='subl'
+fi
+if hash subl3 2>/dev/null ; then
+    alias s='subl3'
+fi
 
 if [ -f "$HOME/.spbashrc" ]; then
     . $HOME/.spbashrc
@@ -46,21 +66,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-#stty -ixon
-
-#if which tmux >/dev/null 2>&1; then
-#    test -z "$TMUX" && ! shopt -q login_shell && (tmux attach || tmux new-session)
-#fi
-
-function rn {
-    tempfile="$(mktemp -t tmp.XXXXXX)"
-    ranger --choosedir="$tempfile" "${@:-$(pwd)}"
-    test -f "$tempfile" &&
-    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
-        cd -- "$(cat "$tempfile")"
-    fi
-    rm -f -- "$tempfile"
-}
-
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+BR=$HOME/.config/broot/launcher/bash/br
+[ -f $BR ] && source $BR
+
